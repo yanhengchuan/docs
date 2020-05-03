@@ -29,6 +29,8 @@ WARNING:
 -	[`8.3-developer`, `8-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/8e20fb49201cbf29bfdb152e08a38524afc26b15/8/developer/Dockerfile)
 -	[`8.3-enterprise`, `8-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/8e20fb49201cbf29bfdb152e08a38524afc26b15/8/enterprise/Dockerfile)
 
+[![amd64/sonarqube build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/sonarqube.svg?label=amd64/sonarqube%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/sonarqube/)
+
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
@@ -127,7 +129,7 @@ $ docker run -ti sonarqube-custom
 Starting from SonarQube 7.8, SonarQube stops gracefully, waiting for any tasks in progress to finish. Waiting for in-progress tasks to finish can take a large amount of time which the docker does not expect by default when stopping. To avoid having the SonarQube instance killed by the Docker daemon after 10 seconds, it is best to configure a timeout to stop the container with `--stop-timeout`. For example:
 
 ```console
-docker run --stop-timeout 3600 sonarqube
+docker run --stop-timeout 3600 amd64/sonarqube
 ```
 
 ## Administration
