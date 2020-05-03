@@ -24,8 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8`, `8u252`, `8-al2-full`, `latest`](https://github.com/corretto/corretto-8-docker/blob/a1e2c7e4fb1d00430b76963020aa2861bba7658f/Dockerfile)
--	[`11`, `11.0.7`, `11-al2-full`](https://github.com/corretto/corretto-11-docker/blob/6ae94c922f550dfd3d9d08b04c10f6c114ee0e51/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
+
+[![arm32v6/amazoncorretto build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/amazoncorretto.svg?label=arm32v6/amazoncorretto%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/amazoncorretto/)
 
 # Quick reference (cont.)
 

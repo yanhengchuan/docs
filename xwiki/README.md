@@ -24,10 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11`, `11.10`, `11.10.4`, `11-mysql-tomcat`, `11.10-mysql-tomcat`, `11.10.4-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/cab959829bd94668a5a6624aa370eb42e8a7c2b1/11/mysql-tomcat/Dockerfile)
--	[`11-postgres-tomcat`, `11.10-postgres-tomcat`, `11.10.4-postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/cab959829bd94668a5a6624aa370eb42e8a7c2b1/11/postgres-tomcat/Dockerfile)
--	[`12`, `12.3`, `12-mysql-tomcat`, `12.3-mysql-tomcat`, `mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/ebb23e6def6d52dc5dc79bb5844f71f68aba0728/12/mysql-tomcat/Dockerfile)
--	[`12-postgres-tomcat`, `12.3-postgres-tomcat`, `postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/ebb23e6def6d52dc5dc79bb5844f71f68aba0728/12/postgres-tomcat/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
+
+[![arm32v6/xwiki build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/xwiki.svg?label=arm32v6/xwiki%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/xwiki/)
 
 # Quick reference (cont.)
 
