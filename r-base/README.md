@@ -24,7 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0.0`, `latest`](https://github.com/rocker-org/rocker/blob/1286d1fa0165a06b93ea9c4cebd94a54cbf86227/r-base/latest/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `s390x` ARCHITECTURE
+
+[![s390x/r-base build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/r-base.svg?label=s390x/r-base%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/r-base/)
 
 # Quick reference (cont.)
 
@@ -66,7 +68,7 @@ R is a GNU project. The source code for the R software environment is written pr
 Launch R directly for interactive work:
 
 ```console
-$ docker run -ti --rm r-base
+$ docker run -ti --rm s390x/r-base
 ```
 
 ## Batch mode
@@ -74,13 +76,13 @@ $ docker run -ti --rm r-base
 Link the working directory to run R batch commands. We recommend specifying a non-root user when linking a volume to the container to avoid permission changes, as illustrated here:
 
 ```console
-$ docker run -ti --rm -v "$PWD":/home/docker -w /home/docker -u docker r-base R CMD check .
+$ docker run -ti --rm -v "$PWD":/home/docker -w /home/docker -u docker s390x/r-base R CMD check .
 ```
 
 Alternatively, just run a bash session on the container first. This allows a user to run batch commands and also edit and run scripts:
 
 ```console
-$ docker run -ti --rm r-base bash
+$ docker run -ti --rm s390x/r-base bash
 $ vim.tiny myscript.R
 ```
 
@@ -95,7 +97,7 @@ $ Rscript myscript.R
 Use `r-base` as a base for your own Dockerfiles. For instance, something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM r-base
+FROM s390x/r-base
 COPY . /usr/local/src/myscripts
 WORKDIR /usr/local/src/myscripts
 CMD ["Rscript", "myscript.R"]
